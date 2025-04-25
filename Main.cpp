@@ -2,7 +2,7 @@
 #include <vector>
 
 std::pair<size_t, size_t> MatrixArgMax(const std::vector<std::vector<int>>& matrix) {
-	int max = 0;
+	int max = matrix[0][0];
 	int imax = 0;
 	int jmax = 0;
 	for (int i = 0; i != (int)matrix.size(); i++) {

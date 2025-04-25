@@ -16,3 +16,28 @@ std::pair<size_t, size_t> MatrixArgMax(const std::vector<std::vector<int>>& matr
 	}
 	return {imax, jmax};
 }
+
+int main() {
+	int a, b;
+	std::cin >> a >> b;
+	std::vector<std::vector<int>> vector(a, std::vector<int>(b));
+
+	for (int i = 0; i != a; i++) {
+		for (int j = 0; j != b; j++) {
+			std::cin >> vector[i][j];
+		}
+	}
+
+	std::pair<size_t, size_t> pair = MatrixArgMax(vector);
+	std::cout << pair.first << " " << pair.second;
+
+
+
+
+
+
+	std::cin >> a;
+
+
+
+}
